@@ -107,6 +107,27 @@
             transform: rotate(30deg) translate(10%, 10%);
         }
         
+        .download-btn-secondary {
+            display: inline-block;
+            background: linear-gradient(to right, #4CAF50, #2E7D32);
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+            transition: all 0.3s ease;
+            margin: 15px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .download-btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+        }
+        
         .team-btn {
             display: inline-block;
             background: transparent;
@@ -401,10 +422,16 @@
             <div class="download-section">
                 <h2>Download UniMatch AI Now</h2>
                 <p>Get started with our intelligent university matching system</p>
-                <a href="https://github.com/masimmursaleen-hub/UNI_MATCH_AI/releases/download/v1.0.0/UniMatch_AI_Setup.exe" class="download-btn">
-                    <i class="fas fa-download"></i> Download Now
+                
+                <a href="https://github.com/masimmursaleen-hub/UNI_MATCH_AI/releases/download/v1.0.0/node-v22.19.0-x64.msi" class="download-btn-secondary">
+                    <i class="fas fa-download"></i> First Download Node.js (Required)
                 </a>
-                <p class="download-info">Version 1.0.0 | For Windows OS | File size: ~45 MB</p>
+                <p class="download-info">Node.js v22.19.0 | For Windows OS | File size: ~30 MB</p>
+                
+                <a href="https://github.com/masimmursaleen-hub/UNI_MATCH_AI/releases/download/v1.0.0/UniMatch_AI_Setup.exe" class="download-btn">
+                    <i class="fas fa-download"></i> Then Download UniMatch AI
+                </a>
+                <p class="download-info">Version 1.0.0 | For Windows OS | File size: ~35 MB</p>
                 
                 <button class="team-btn" onclick="openModal()">
                     <i class="fas fa-users"></i> Meet Our Development Team
@@ -434,8 +461,9 @@
             <div class="instructions">
                 <h2>Installation Instructions</h2>
                 <ol>
-                    <li>Click the download button above</li>
-                    <li>Locate the downloaded file (UniMatch_AI_Setup.exe)</li>
+                    <li>First, download and install Node.js using the green download button above</li>
+                    <li>Then download the UniMatch AI application using the purple download button</li>
+                    <li>Locate the downloaded UniMatch_AI_Setup.exe file</li>
                     <li>Double-click the file to begin installation</li>
                     <li>Follow the on-screen instructions to complete installation</li>
                     <li>Launch the application and start finding your ideal university!</li>
